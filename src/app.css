@@ -1,0 +1,12 @@
+/* #app {
+    display: grid;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+} */
+
+.active {
+    background: #cccccc;
+    color: red;
+    border: 1px solid black;
+    border-radius: 15px;
+}
