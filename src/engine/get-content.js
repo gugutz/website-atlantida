@@ -1,23 +1,13 @@
-const getContent = (pageName, callback) => {
-  // object containnig the pages to include
-  // let pages = {
-  //   home: 'teste',
-  //   about: 'about'
-  // }
-  // callback(pages[pageName]);
-  // the above is same as using property name access:   // return contentPages.home ,  but i cant use a variable to navigate the object
+import getElement from './get-element';
 
-  // creating a new ajax request for fetching the html with the content
-  let request = new XMLHttpRequest();
+const contentDiv = getElement('content');
 
-  // call the callack with the content loaded from the file
-  request.onload = () => {
-    callback(request.responseText);
-  };
+  export const homeRoute = async () => {
+    const homeScreen = await import('../screens/home')
+    contentDiv.appendChild(await homeScreen)
+  }
 
-  // fetch the content of html file based on the name extracted from the fragmentId
-  request.open('GET', pageName + '.html');
-  request.send(null);
-}
-
-export default getContent;
+  export async function aboutRoute() {
+    const aboutScreen = await import('../screens/about')
+    contentDiv.appendChild(await aboutScreen)
+  }

@@ -1,18 +1,19 @@
 import setActiveLink from './set-active-link.js';
-import getContent from './get-content.js';
+import {homeRoute, aboutRoute} from './get-content.js';
+import getElement from './get-element.js';
 
-
-// function to navigate to content based on location.hash
 const navigate = () => {
-  // sets the default location.hash if none is selected
+  const contentPane = getElement('content')
+  const pageName = location.hash.substr(1)
+
   if (!location.hash) {
-    location.hash = '#home';
+    location.hash = '#home'
+    homeRoute();
   }
-  let contentPane = document.getElementById('content');
-  // uses substring to remove the hash character (#) from the location
-  let pageName = location.hash.substr(1);
-  contentPane.innerHTML = getContent(pageName, () => {});
-  // set activeLink for current location
-  setActiveLink(pageName);
+  if(location.hash === '#about') {
+    aboutRoute()
+  }
+  setActiveLink(pageName)
 }
-export default navigate;
+
+export default navigate

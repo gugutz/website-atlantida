@@ -3,7 +3,7 @@ const historyApiFallback = require('connect-history-api-fallback')
 
 browserSync.init({
   server: 'public',
-  files: ['dist'],
+  files: ['public'],
   port: 3000,
   open: false,
   middleware: [historyApiFallback()]
