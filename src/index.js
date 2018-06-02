@@ -1,5 +1,7 @@
 import {siteTitle, b, c} from './config.js';
 import {navigate} from './engine/router.js';
+import 'bulma/css/bulma.css';
+import './app.css';
 
 // navigate once to go to home
 navigate();
