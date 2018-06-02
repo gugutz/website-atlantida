@@ -1,16 +1,20 @@
 import addElement from '../engine/add-element.js'
-import getElement from '../engine/get-element.js'
 
 
 const header = () => {
-  const header = addElement('header', 'header', 'header')
 
-  const headerContent = document.createTextNode("header textoo")
-  header.appendChild(headerContent)
 
-  // embedding the header on the main app div
-  const appDiv = getElement('app')
-  appDiv.appendChild(header)
+  const header = addElement('header', 'hero is-light')
+  const logo = addElement('div', 'hero-body')
+  const container = addElement('div', 'container')
+  const title = addElement('h1', 'title')
+  const subtitle = addElement('h2', 'subtitle')
+  title.textContent = 'Atlantida Alumínio'
+  subtitle.textContent = 'subtitulo aqui'
+  header.appendChild(logo)
+  logo.appendChild(container)
+  container.appendChild(title)
+  container.appendChild(subtitle)
 
   return header
 }

@@ -1,10 +1,26 @@
-import addElement from "../../engine/add-element";
+import addElement from '../../engine/add-element.js';
+import header from '../../components/header.js';
+import navbar from '../../components/navbar.js';
+import footer from '../../components/footer.js';
 
-const homePage = () => {
-  const homePage =  addElement('p', undefined, 'home-text')
-  const homePageText = document.createTextNode('home page text here')
-  aboutPage.appendChild(homePageText)
-  return homePage
+const home = async function() {
+
+  const wrapper =  addElement('section', 'section')
+
+  wrapper.appendChild(await header())
+  wrapper.appendChild(await navbar())
+
+  // current page layout setup
+  const page =  addElement('div', 'container')
+  wrapper.appendChild(page)
+
+  const title = addElement('h1', 'page-title')
+  title.textContent = 'Bem vindo!'
+
+  page.appendChild(title)
+
+  wrapper.appendChild(await footer())
+  return wrapper
 }
 
-export default homePage
+export default home
