@@ -4,7 +4,7 @@ import 'bulma/css/bulma.css';
 import './app.css';
 
 // navigate once to go to home
-navigate();
+window.addEventListener('load', navigate);
 
 // watch for changes in location and import corresponding page
 window.addEventListener('hashchange', navigate);

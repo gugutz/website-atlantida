@@ -1,15 +1,17 @@
-const router = async (destination) => {
-  if (destination == '') {
-    destination += 'home'
-  }
-  const {default: currentScreen} = await import(`../screens/${destination}`)
+const router = async (pageName) => {
+  const {default: currentScreen} = await import(`../screens/${pageName}`)
   window.app.innerHTML = ''
   window.app.appendChild(await currentScreen())
 }
 
 const navigate = async () => {
-  const destination = location.hash.substr(1)
-  router(destination)
+  if (location.hash === '') {
+    router('home')
+  }
+  else {
+    const pageName = location.hash.substr(1)
+    router(pageName)
+  }
 }
 
 export {router, navigate}
