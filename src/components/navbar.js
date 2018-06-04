@@ -12,12 +12,20 @@ const links = [
 const navbar = () => {
 
   const navbar = addElement('nav', 'navbar container is-fluid')
-  links.map(({name, href, text}) => {
+
+  links.forEach(({name, href, text}) => {
     const linkItem = addElement('a', 'navbar-item')
     linkItem.setAttribute('href', href);
     const linkName = document.createTextNode(name);
     linkItem.appendChild(linkName);
     navbar.appendChild(linkItem);
+
+    linkItem.addEventListener('focus', () => {
+      linkItem.classList.add('is-active')
+    })
+    linkItem.addEventListener('blur', () => {
+      linkItem.classList.remove('is-active')
+    })
   })
 
   return navbar;

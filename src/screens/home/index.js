@@ -5,19 +5,18 @@ import footer from '../../components/footer.js';
 
 const home = async function() {
 
+  // main layout structure
   const wrapper =  addElement('section', 'section')
+    wrapper.appendChild(await header())
+    wrapper.appendChild(await navbar())
 
-  wrapper.appendChild(await header())
-  wrapper.appendChild(await navbar())
-
-  // current page layout setup
-  const page =  addElement('div', 'container')
-  wrapper.appendChild(page)
-
-  const title = addElement('h1', 'page-title')
-  title.textContent = 'Bem vindo!'
-
-  page.appendChild(title)
+    // current page layout setup
+    const page =  addElement('div', 'container')
+    wrapper.appendChild(page)
+      // page title
+      const title = addElement('h1', 'page-title')
+      title.textContent = 'Bem vindo!'
+      page.appendChild(title)
 
   wrapper.appendChild(await footer())
   return wrapper

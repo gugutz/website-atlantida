@@ -4,17 +4,30 @@ import navbar from '../../components/navbar.js';
 import footer from '../../components/footer.js';
 
 
-const about = async function (){
+const about = async () => {
+
   const wrapper =  addElement('section', 'section')
-  wrapper.appendChild(await header())
-  wrapper.appendChild(await navbar())
 
- const aboutPage =  addElement('p', 'about-page')
-  const aboutPageText = document.createTextNode('about page text here')
-  aboutPage.appendChild(aboutPageText)
-  wrapper.appendChild(aboutPage)
+    // import header and navbar
+    wrapper.appendChild(await header())
+    wrapper.appendChild(await navbar())
 
-  wrapper.appendChild(await footer())
+    // current page setup
+    const container =  addElement('div', 'container')
+    wrapper.appendChild(container)
+
+
+      // page title and subtitle
+      const title = addElement('h1', 'title')
+      container.appendChild(title)
+      title.textContent = 'Sobre a empresa'
+
+      // const paragraph1 =  addElement('p', 'about-page')
+      // container.appendChild(paragraph1)
+      // paragraph1.textContent = 'about page text here'
+
+    wrapper.appendChild(await footer())
+
   return wrapper
 }
 
