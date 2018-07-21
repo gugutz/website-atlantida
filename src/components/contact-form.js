@@ -9,9 +9,7 @@ const contactForm = () => {
   const form = addElement('form', 'form')
   formWrapper.appendChild(form)
 
-  const title = addElement('h1', 'title')
-  form.appendChild(title)
-  title.textContent = 'Entre em contato.'
+
 
   const inputElements = [
     input({

@@ -3,15 +3,15 @@ import addElement from '../engine/add-element.js';
 // array of links for the sidebar,
 // temporary fix
 const links = [
-  {name: 'home', href: '#home', text: 'Inicio'},
-  {name: 'about', href: '#about', text: 'Sobre a empresa'},
-  {name: 'contact', href: '#contact', text: 'Fale Conosco'}
+  {name: 'home', href: '/home', text: 'Inicio'},
+  {name: 'about', href: '/about', text: 'Sobre a empresa'},
+  {name: 'contact', href: '/contact', text: 'Fale Conosco'}
 ]
 
 
 const navbar = () => {
 
-  const navbar = addElement('nav', 'navbar container is-fluid')
+  const navbar = addElement('nav', 'navbar is-fluid is-dark')
 
   links.forEach(({name, href, text}) => {
     const linkItem = addElement('a', 'navbar-item')

@@ -17,6 +17,7 @@ module.exports = {
   devtool: isProd ? false : 'cheap-module-source-map',
   plugins: [
     new CleanWebpackPlugin(['public/static', 'public/index.html']),
+    // auto generate an html that imports the main js entrypoint
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       filename: path.resolve(__dirname, 'public/index.html')

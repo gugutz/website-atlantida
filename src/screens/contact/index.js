@@ -23,20 +23,23 @@ const contact = async function (){
       container.appendChild(columns)
 
         // column 1 content
-        const column1 = addElement('div', 'column')
+        const column1 = addElement('div', 'column is-half')
         columns.appendChild(column1)
-        column1.textContent = `ontact pagsdfsdfe paragraph`
+          const phoneNumber = addElement('p', 'text')
+          phoneNumber.textContent = 'Telefone: 3240-7844'
+          column1.appendChild(phoneNumber)
+          const address = addElement('p', 'text')
+          column1.appendChild(address)
+          address.textContent = 'R Leo Pauli, 39 - Areias - São José - SC'
+
 
         // column 2 content (form)
-        const column2 = addElement('div', 'column')
+        const column2 = addElement('div', 'column is-half')
         columns.appendChild(column2)
 
           // dynamically import contact form
           column2.appendChild(await contactForm())
 
-          const column2Text = addElement('p', 'paragraph')
-          column2.appendChild(column2Text)
-          column2Text.textContent = 'column 2'
 
   container.appendChild(await footer())
 

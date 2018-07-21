@@ -1,5 +1,5 @@
 const router = async (pageName) => {
-  const {default: currentScreen} = await import(`../screens/${pageName}`)
+  const {default: currentScreen} = await import(`../../screens/${pageName}`)
   window.app.innerHTML = ''
   window.app.appendChild(await currentScreen())
 }
