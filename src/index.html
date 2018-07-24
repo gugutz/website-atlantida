@@ -18,60 +18,109 @@ I<!DOCTYPE html>
 
 </head>
 
-
 <body>
     <div id="wrapper" class="container">
 
-        <header class="hero is-info">
+        <header class="hero is-teal">
+            <div class="hero-head">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a href='/' class="navbar-item">
+                                <img src="/img/site/logo-transparent.png" alt="Logo">
+                            </a>
+                            <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div id="navbarMenuHeroB" class="navbar-menu">
+                            <div class="navbar-end">
+                                <span class="navbar-item">
+                                    <a href="/" class="is-active">
+                                        <span class="icon">
+                                              <i class="fas fa-home"></i>
+                                        </span>
+                                        Home
+                                    </a>
+                                </span>
+                                <a href="/about.html" class="navbar-item">Sobre a empresa</a>
+                                <a href="/portfolio.html" class="navbar-item">Portfolio</a>
+                                <a href="/contato.html" class="navbar-item">Contato</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title">Atlantida Aluminio</h1>
-                    <h2 class="subtitle">Excelência em Esquadrias</h2>
+                    <div class="carousel carousel-animated carousel-animate-slide" data-autoplay="true">
+                        <div class="carousel-container">
+                            <div class="carousel-item has-background is-active">
+                                <img class="is-pulled-left padding-15" src="/img/produtos/janelas/persiana-integrada-001.png" alt="" />
+                                <div class="carousel-item-description">
+                                    <h1 class="subtitle">Janela com persiana integrada</h1>
+                                    <p>De um toque de elegâcia para o seu lar.</p>
+                                </div>
+                                <div class="title">Persianas Integradas</div>
+                            </div>
+                            <div class="carousel-item has-background">
+                                <img class="is-pulled-left padding-15" src="/img/produtos/janelas/persiana-integrada-002.png" alt="" />
+                                <div class="title">Janelas e Portas<a href="/">La Song Box</a></div>
+                            </div>
+                            <div class="carousel-item has-background">
+                                <img class="is-pulled-right padding-15" src="/img/produtos/janelas/persiana-integrada-003.png" alt="" />
+                                <div class="title">Sushi time</div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-navigation is-centered">
+                            <div class="carousel-nav-left">
+                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="carousel-nav-right">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                           </div>
+                       </div>
+                   </div>
                 </div>
+            </div>
+
+            <div class="hero-foot">
+                <nav class="tabs is-boxed is-fullwidth">
+                    <div class="container">
+                        <ul>
+                            <li class="is-active">
+                                <a>Overview</a>
+                            </li>
+                            <li>
+                                <a>Modifiers</a>
+                            </li>
+                            <li>
+                                <a>Grid</a>
+                            </li>
+                            <li>
+                                <a>Elements</a>
+                            </li>
+                            <li>
+                                <a>Components</a>
+                            </li>
+                            <li>
+                                <a>Layout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </header>
 
 
-        <nav class="navbar is-fluid is-light">
-
-            <a href="/" class="navbar-item is-active">Home</a>
-            <a href="/about.html" class="navbar-item">Sobre a empresa</a>
-            <a href="/contato.html" class="navbar-item">Contato</a>
-
-        </nav>
 
 
         <section>
             <div class="container">
-                <div class="carousel carousel-animated carousel-animate-slide" data-autoplay="true">
-                    <div class="carousel-container">
-                        <div class="carousel-item has-background is-active">
-                            <img class="is-background" src="./img/produtos/janelas/persiana-integrada-001.jpg" alt="" width="640" height="150" />
-                            <div class="title">Persianas Integradas</div>
-                        </div>
-                        <div class="carousel-item has-background">
-                            <img class="is-background" src="./img/produtos/janelas/persiana-integrada-002.jpg" alt="" width="640" height="150" />
-                            <div class="title">Janelas e Portas<a href="https://lasongbox.com" target="_blank">La Song Box</a></div>
-                        </div>
-                        <div class="carousel-item has-background">
-                            <img class="is-background" src="./img/produtos/janelas/persiana-integrada-001.jpg" alt="" width="640" height="150" />
-                            <div class="title">Sushi time</div>
-                        </div>
-                        <div class="carousel-item has-background">
-                            <img class="is-background" src="./img/produtos/janelas/persiana-integrada-001.jpg" alt="" width="640" height="150" />
-                            <div class="title">Life</div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-navigation is-centered">
-                        <div class="carousel-nav-left">
-                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                        </div>
-                        <div class="carousel-nav-right">
-                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                       </div>
-                   </div>
-               </div>
             </div>
         </section>
 
@@ -124,30 +173,29 @@ I<!DOCTYPE html>
 
             </div><!-- end carousel -->
 
-    </div>
-
-
-    <footer class="footer">
-
-        <div class="columns">
-            <div class="column">
-                Dolor recusandae accusamus sit inventore commodi magni consectetur! Amet ducimus vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
-            </div>
-            <div class="column">
-                Dolor vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
-            </div>
-            <div class="column">
-                Dolor magni consectetur! Amet ducimus vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
-            </div>
         </div>
 
-    </footer>
 
+        <footer class="footer">
+            <div class="columns">
+                <div class="column">
+                    Dolor recusandae accusamus sit inventore commodi magni consectetur! Amet ducimus vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
+                </div>
+                <div class="column">
+                    Dolor vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
+                </div>
+                <div class="column">
+                    Dolor magni consectetur! Amet ducimus vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
+                </div>
+            </div>
+        </footer>
 
-    <script>
-        // Attaching the Bulma carousel array
-        var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
-    </script>
+        <script>
+            // Attaching the Bulma carousel array
+            var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
+        </script>
+
+    </div>
 </body>
 
 
