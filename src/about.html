@@ -1,59 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <title>Atlantida Aluminio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-727116-7"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-    <!-- Bulma css library -->
-    <link rel="stylesheet" type="text/css" href="./main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+            gtag('config', 'UA-727116-7');
+        </script>
 
-</head>
+        <meta charset="UTF-8">
+        <title>Atlantida Aluminio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
+        <!-- Bulma css library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
 
-    <div id="wrapper" class="container">
+        <!-- my css configs -->
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+    </head>
 
-        <header class="hero is-info">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title">Atlantida Aluminio</h1>
-                    <h2 class="subtitle">Excelência em Esquadrias</h2>
+    <body>
+
+        <header class="hero">
+            <div class="hero-head has-background-grey-lighter">
+                <div class="container is-fixed">
+
+                    <!-- Logo -->
+                    <a href='/'>
+                        <img src="/img/site/logo-transparent.png" class="logo is-pulled-left" alt="Logo">
+                    </a>
+
+                    <!-- Navigation Menu -->
+                    <nav class="navbar">
+                        <div class="navbar-brand">
+                            <div class="navbar-burger burger" data-target="navbarMenuHeroB" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div id="navbarMenuHeroB" class="navbar-menu">
+                            <div class="navbar-end">
+                                <span class="navbar-item">
+                                    <a href="/" class="is-active">
+                                        <span class="icon">
+                                            <i class="fas fa-home"></i>
+                                        </span>
+                                        Home
+                                    </a>
+                                </span>
+                                <a href="/about.html" class="navbar-item">Empresa</a>
+                                <a href="/products.html" class="navbar-item">Produtos</a>
+                                <a href="/portfolio.html" class="navbar-item">Portfolio</a>
+                                <a href="/contato.html" class="navbar-item">Contato</a>
+                                <div class="navbar-item has-dropdown is-hoverable">
+                                    <a class="navbar-link">
+                                        Dicas
+                                    </a>
+                                    <div class="navbar-dropdown">
+                                        <a class="navbar-item">
+                                            Como limpar suas persianas?
+                                        </a>
+                                        <a class="navbar-item">
+                                            Como dar manutenção nas esquadrias?
+                                        </a>
+                                        <a class="navbar-item">
+                                            Components
+                                        </a>
+                                        <hr class="navbar-divider">
+                                        <div class="navbar-item">
+                                            Version 0.7.1
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </header>
 
 
-        <nav class="navbar is-fluid is-light">
-            <a href="./" class="navbar-item">Home</a>
-            <a href="./sobre.html" class="navbar-item is-active">Sobre a empresa</a>
-            <a href="./contato.html" class="navbar-item">Contato</a>
-        </nav>
+        <section class="hero">
+            <div class="hero-body container is-fluid">
+                    <div class="column">
+                <h1 class="title has-text-centered">Atlantida Alumínio</h1>
+                <p class="content">A Atlântida Alumínio é uma serralheria localizada em Florianópolis, Santa Catarina, especializada na fabricação de esquadrias de alumínio.</p>
+                    </div>
+            </div>
+        </section>
+
+        <section class="hero company-core-values">
+            <div class="container box has-background-white-ter is-fluid">
 
 
-        <div class="container is-fluid">
-            <section class="columns">
-            Adipisicing dolor sapiente laboriosam temporibus tempora Quidem ratione iusto corrupti magni recusandae quibusdam Blanditiis nisi aut ad iste placeat. Ea veritatis delectus vel ab dicta corrupti Esse pariatur repellendus laboriosam quos sit! Quis ipsa quis accusamus eaque commodi, provident, delectus nulla, quo? Distinctio iusto in laudantium minus incidunt amet vero Dolore numquam voluptatibus esse saepe quisquam Amet aliquam aliquid distinctio quae hic. Aliquid esse expedita voluptatem nam excepturi Consectetur vitae ab vitae unde cupiditate Odio suscipit tempora pariatur dolore nihil Aliquam velit aperiam accusamus obcaecati laudantium, quo Libero voluptates officiis explicabo eaque reprehenderit Hic dolorem ullam repellat architecto assumenda maiores Provident explicabo itaque pariatur quibusdam tenetur est itaque laboriosam optio ratione. Ut libero dignissimos minus atque repellendus laborum. Minima unde fuga pariatur totam error nam. Officia tempore ea reiciendis minus.
-            </section>
-        </div>
+                <section class="content">
+                    <div class="tile columns is-parent container is-fluid">
+                        <div class="column">
+                            <article class="tile box column is-child notification has-background-trusted-blue has-text-light">
+                                <p class="title has-text-centered">Missão</p>
+                                <p class="content">Entregar produtos com qualidade que agreguem valor e beleza aos lares de nossos clientes.</p>
+                            </article>
+                        </div>
+
+                        <div class="column">
+                            <article class="tile box is-child notification has-background-trusted-blue has-text-light">
+                                <p class="title has-text-centered">Valores</p>
+                                <p class="content">
+                    <ul>
+                        <li class="company-values-item">A vida em primeiro lugar</li>
+                        <li class="company-values-item">Entregar com qualidade</li>
+                        <li class="company-values-item">Trabalhar com responsabilidade</li>
+                        <li class="company-values-item">Proatividade</li>
+                    </ul>
+</p>
+                            </article>
+                        </div>
+
+                        <div class="column">
+                            <article class="tile box is-child notification has-background-trusted-blue has-text-light">
+                                <p class="title has-text-centered">Visão</p>
+                                <p class="content">Ser a principal empresa de esquadrias de alumínio de Santa Catarina.</p>
+                            </article>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </section>
 
 
-        <footer class="footer">
-            <div class="columns">
-                <div class="column">
-                    Dolor recusandae accusamus sit inventore commodi magni consectetur! Amet ducimus vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
-                </div>
-                <div class="column">
-                    Dolor vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
-                </div>
-                <div class="column">
-                    Dolor magni consectetur! Amet ducimus vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
+
+
+        <footer class="footer has-background-grey-lighter">
+            <div class="container is-fluid">
+                <div class="columns">
+                    <div class="column has-text-right">
+                        <div class="is-hidden-mobile">
+                            <i class="fa fa-phone"></i>
+                            <span>Telefone: </span>
+                            <a href="tel:+554832407844">(48) 3240-7844</a>
+                        </div>
+                        <div class="is-hidden-desktop">
+                            <a href="tel:+554832407844" class="button">
+                            <i class="fa fa-phone"></i>
+                                <span>Ligar</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        Endereço: R Leo Pauli, 39 - Areias - São José
+                    </div>
                 </div>
             </div>
         </footer>
+
 
     </body>
 

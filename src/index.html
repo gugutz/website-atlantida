@@ -1,191 +1,283 @@
-I<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <title>Atlantida Aluminio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-727116-7"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-    <!-- Bulma css library -->
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <!-- Font Awesome to use Bulma with Icons -->
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-    <!-- Bulma carousel extension -->
-    <script src="https://unpkg.com/bulma-carousel@3.0.0/dist/js/bulma-carousel.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/bulma-carousel@3.0.0/dist/css/bulma-carousel.min.css">
+            gtag('config', 'UA-727116-7');
+        </script>
 
-</head>
+        <meta charset="UTF-8">
+        <title>Atlantida Aluminio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-    <div id="wrapper" class="container">
+        <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
+        <!--[if IE]><link rel="shortcut icon" href="/img/site/favicon/favicon.ico"><![endif]-->
 
-        <header class="hero is-teal">
-            <div class="hero-head">
-                <nav class="navbar">
-                    <div class="container">
+        <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
+        <link rel="apple-touch-icon-precomposed" href="/img/site/favicon/apple-touch-icon-precomposed.png">
+
+        <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+        <link rel="icon" href="/img/site/favicon/android-icon-192x192.png">
+
+        <!-- www.favicon-generator.org generated code -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/img/site/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/img/site/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/img/site/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/site/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/img/site/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/img/site/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/img/site/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/img/site/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/site/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/img/site/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/site/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/img/site/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/site/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/src/img/site/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/src/img/site/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Bulma css library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+        <!-- Font Awesome to use Bulma with Icons -->
+        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+        <!-- Bulma carousel extension -->
+        <script src="https://unpkg.com/bulma-carousel@3.0.0/dist/js/bulma-carousel.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/bulma-carousel@3.0.0/dist/css/bulma-carousel.min.css">
+
+        <!-- my css configs -->
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+
+    </head>
+
+    <body class='has-background-white has-text-grey-dark'>
+
+        <header class="hero">
+            <div class="hero-head has-background-grey-lighter">
+                <div class="container is-fixed">
+
+                    <!-- Logo -->
+                    <a href='/'>
+                        <img src="/img/site/logo-transparent.png" class="logo is-pulled-left" alt="Logo">
+                    </a>
+
+                    <!-- Navigation Menu -->
+                    <nav class="navbar">
                         <div class="navbar-brand">
-                            <a href='/' class="navbar-item">
-                                <img src="/img/site/logo-transparent.png" alt="Logo">
-                            </a>
-                            <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+                            <div class="navbar-burger burger" data-target="navbarMenuHeroB" >
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                            </span>
+                            </div>
                         </div>
+
                         <div id="navbarMenuHeroB" class="navbar-menu">
                             <div class="navbar-end">
                                 <span class="navbar-item">
                                     <a href="/" class="is-active">
                                         <span class="icon">
-                                              <i class="fas fa-home"></i>
+                                            <i class="fas fa-home"></i>
                                         </span>
                                         Home
                                     </a>
                                 </span>
-                                <a href="/about.html" class="navbar-item">Sobre a empresa</a>
+                                <a href="/about.html" class="navbar-item">Empresa</a>
+                                <a href="/products.html" class="navbar-item">Produtos</a>
                                 <a href="/portfolio.html" class="navbar-item">Portfolio</a>
                                 <a href="/contato.html" class="navbar-item">Contato</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-
-            <div class="hero-body">
-                <div class="container">
-                    <div class="carousel carousel-animated carousel-animate-slide" data-autoplay="true">
-                        <div class="carousel-container">
-                            <div class="carousel-item has-background is-active">
-                                <img class="is-pulled-left padding-15" src="/img/produtos/janelas/persiana-integrada-001.png" alt="" />
-                                <div class="carousel-item-description">
-                                    <h1 class="subtitle">Janela com persiana integrada</h1>
-                                    <p>De um toque de elegâcia para o seu lar.</p>
+                                <div class="navbar-item has-dropdown is-hoverable">
+                                    <a class="navbar-link">
+                                        Dicas
+                                    </a>
+                                    <div class="navbar-dropdown">
+                                        <a class="navbar-item">
+                                            Como limpar suas persianas?
+                                        </a>
+                                        <a class="navbar-item">
+                                            Como dar manutenção nas esquadrias?
+                                        </a>
+                                        <a class="navbar-item">
+                                            Components
+                                        </a>
+                                        <hr class="navbar-divider">
+                                        <div class="navbar-item">
+                                            Version 0.7.1
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="title">Persianas Integradas</div>
-                            </div>
-                            <div class="carousel-item has-background">
-                                <img class="is-pulled-left padding-15" src="/img/produtos/janelas/persiana-integrada-002.png" alt="" />
-                                <div class="title">Janelas e Portas<a href="/">La Song Box</a></div>
-                            </div>
-                            <div class="carousel-item has-background">
-                                <img class="is-pulled-right padding-15" src="/img/produtos/janelas/persiana-integrada-003.png" alt="" />
-                                <div class="title">Sushi time</div>
                             </div>
                         </div>
-
-                        <div class="carousel-navigation is-centered">
-                            <div class="carousel-nav-left">
-                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                            </div>
-                            <div class="carousel-nav-right">
-                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                           </div>
-                       </div>
-                   </div>
+                    </nav>
                 </div>
             </div>
 
-            <div class="hero-foot">
-                <nav class="tabs is-boxed is-fullwidth">
-                    <div class="container">
-                        <ul>
-                            <li class="is-active">
-                                <a>Overview</a>
-                            </li>
-                            <li>
-                                <a>Modifiers</a>
-                            </li>
-                            <li>
-                                <a>Grid</a>
-                            </li>
-                            <li>
-                                <a>Elements</a>
-                            </li>
-                            <li>
-                                <a>Components</a>
-                            </li>
-                            <li>
-                                <a>Layout</a>
-                            </li>
-                        </ul>
+            <div class="hero-body container">
+                <div class="carousel carousel-animated carousel-animate-slide" data-autoplay="true">
+                    <div class="carousel-container">
+
+                        <div class="carousel-item has-background is-active">
+                            <div class="columns">
+                                <div class="column">
+                                    <img class=" padding-15" src="/img/produtos/janelas/persiana-integrada-003.png" alt="" />
+                                </div>
+                                <div class="column carousel-item-description  is-hidden-mobile">
+                                    <h1 class="subtitle">Janela com persiana integrada</h1>
+                                    <h2 class="subtitle">De um toque de elegâcia para o seu lar.</h2>
+                                    <ul>
+                                        <li>Bloqueiam 100% da luz externa</li>
+                                        <li>Opções manual / automatizada</li>
+                                        <li>Mais segurança</li>
+                                    </ul>
+
+                                </div>
+                                <!-- title for an item in the carousel. appears as legend in forms -->
+                                <!-- <div class="title">Persianas Integradas</div> -->
+                            </div>
+                        </div>
+
+                        <div class="carousel-item has-background is-active">
+                            <div class="columns">
+                                <div class="column">
+                                    <img class=" padding-15" src="/img/produtos/portas/porta-pivotante-branca-001.jpg" alt="" />
+                                </div>
+                                <div class="column carousel-item-description  is-hidden-mobile">
+                                    <h1 class="subtitle">Portas pivotantes</h1>
+                                    <h2 class="subtitle">Requinte e sofisticação para a entrada da sua residência.</h2>
+                                    <ul>
+                                        <li>Resistencia</li>
+                                        <li>Opções manual / automatizada</li>
+                                        <li>Mais segurança</li>
+                                    </ul>
+
+                                </div>
+                                <!-- title for an item in the carousel. appears as legend in forms -->
+                                <!-- <div class="title">Persianas Integradas</div> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item has-background">
+                            <div class="columns">
+                                <div class="column">
+                                    <img class=" padding-15" src="/img/produtos/portao/portao-lambri-001.png" alt="" />
+                                </div>
+                                <div class="column carousel-item-description  is-hidden-mobile">
+                                    <h1 class="subtitle">Portão de Lambri</h1>
+                                    <p>Segurança e estilo.</p>
+                                    <p>Portões resistentes com material reforçado e acabamento impecável.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </nav>
+
+                    <div class="carousel-navigation is-centered">
+                        <div class="carousel-nav-left">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="carousel-nav-right">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </header>
 
 
+        <section class="content">
+            <div class="container box has-background-white-ter is-fluid">
+                <h1 class="title has-text-centered">Atlantida Alumínio</h1>
+                <h2 class="subtitle has-text-centered">Excelência em esquadrias</h2>
+                <p class="content">Seja bem vindo! Estamos há mais de 30 anos no mercado, entregando esquadrias de alta qualidade e padrão para centenas de lares. Solicite um orçamento ou agende uma visita sem compromisso.</p>
 
 
-        <section>
-            <div class="container">
+                <section class="content">
+                    <div class="tile columns is-parent container is-fluid">
+                        <div class="column">
+                            <article class="tile box column is-child notification has-background-trusted-blue has-text-light">
+                                <p class="title has-text-centered">Experiência</p>
+                                <p class="content">Estamos há mais de 30 anos no mercado, entregando esquadrias de alta qualidade e padrão para centenas de lares.</p>
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="tile box is-child notification has-background-trusted-blue has-text-light">
+                                <p class="title has-text-centered">Confiança</p>
+                                <p class="content">Nossos produtos tem garantia de até 2 anos.</p>
+                            </article>
+                        </div>
+                        <div class="column">
+                            <article class="tile box is-child notification has-background-trusted-blue has-text-light">
+                                <p class="title has-text-centered">Qualidade</p>
+                                <p class="content">Dispomos de uma excelente infraestrutura e uma equipe experiente e qualificada para produzir esquadrias de alto padrão e qualidade.</p>
+                            </article>
+                        </div>
+
+                    </div>
+                </section>
+
             </div>
         </section>
 
-        <div class="columns container">
-            <div class="column">
-                Dolor nostrum numquam aliquam non asperiores? Ea reiciendis distinctio eum omnis eligendi deserunt Suscipit facere distinctio nesciunt praesentium laboriosam Impedit recusandae accusamus sit inventore commodi magni consectetur! Amet ducimus vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
+        <section class="hero">
+            <div class="hero-body container has-text-centered">
+                <div class="carousel carousel-animated carousel-animate-slide" data-size="5">
+                    <h2 class="title">Parceiros e Fornecedores</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-item is-active">
+                            <figure class="image is-2by1"><img src="/img/parceiros/alumiconte-rgb-transparent.png"></figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="image is-2by1"><img src="/img/parceiros/aluminio-sao-jose.png"></figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="image is-2by1"><img src="/img/parceiros/udinese.gif"></figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="image is-2by1"><img src="/img/parceiros/fermax.jpg"></figure>
+                        </div>
+                    </div>
+
+                    <div class="carousel-navigation is-centered">
+                        <div class="carousel-nav-left">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="carousel-nav-right">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </div><!-- end carousel -->
             </div>
-            <div class="column">
-                Dolor nostrum numquam aliquam non asperiores? Ea reiciendis distinctio eum omnis eligendi deserunt Suscipit facere distinctio nesciunt praesentium laboriosam Impedit recusandae accusamus sit inventore commodi magni consectetur! Amet ducimus vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
-            </div>
-            <div class="column">
-                Dolor nostrum numquam aliquam non asperiores? Ea reiciendis distinctio eum omnis eligendi deserunt Suscipit facere distinctio nesciunt praesentium laboriosam Impedit recusandae accusamus sit inventore commodi magni consectetur! Amet ducimus vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="carousel carousel-animated carousel-animate-slide" data-size="5">
-                <div class="carousel-container">
-                    <div class="carousel-item is-active">
-                        <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure class="image is-2by1"><img src="https://bulma.io/images/placeholders/640x320.png"></figure>
-                    </div>
-                </div>
-
-                <div class="carousel-navigation is-centered">
-                    <div class="carousel-nav-left">
-                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                    </div>
-                    <div class="carousel-nav-right">
-                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-
-            </div><!-- end carousel -->
-
-        </div>
+        </section>
 
 
-        <footer class="footer">
-            <div class="columns">
-                <div class="column">
-                    Dolor recusandae accusamus sit inventore commodi magni consectetur! Amet ducimus vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
-                </div>
-                <div class="column">
-                    Dolor vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
-                </div>
-                <div class="column">
-                    Dolor magni consectetur! Amet ducimus vero beatae repellendus quas? Minima id molestias eos accusamus dolor. Ex illum labore nobis pariatur voluptate Omnis ipsa quaerat magni accusamus
+        <footer class="footer has-background-grey-lighter">
+            <div class="container is-fluid">
+                <div class="columns">
+                    <div class="column has-text-right">
+                        <div class="is-hidden-mobile">
+                            <i class="fa fa-phone"></i>
+                            <span>Telefone: </span>
+                            <a href="tel:+554832407844">(48) 3240-7844</a>
+                        </div>
+                        <div class="is-hidden-desktop">
+                            <a href="tel:+554832407844" class="button">
+                            <i class="fa fa-phone"></i>
+                                <span>Ligar</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        Endereço: R Leo Pauli, 39 - Areias - São José
+                    </div>
                 </div>
             </div>
         </footer>
@@ -194,9 +286,9 @@ I<!DOCTYPE html>
             // Attaching the Bulma carousel array
             var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
         </script>
+        <script src="/js/burger-toogle.js"></script>
 
-    </div>
-</body>
+    </body>
 
 
 </html>

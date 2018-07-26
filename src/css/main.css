@@ -1,12 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+}
+#wrapper {
+    margin: 0, auto;
+}
 .contact-info {
     color: dark-blue;
 }
+.margin-10 { margin: 10px; }
+.margin-20 { margin: 20px; }
 .padding-10 { padding: 10px; }
 .padding-15 { padding: 15px; }
 .padding-20 { padding: 20px; }
 .carousel-item-description {
-    margin-top: 40px;
-    margin-left: 100px;
-    padding-left: 100px;
+    margin-top: 60px;
+    margin-left: 60px;
+    /* margin-left: 100px; */
+    /* padding-left: 100px; */
 }
-
+.logo {
+    width: auto;
+    height: 140px;
+    /* float: left; */
+    padding-left: 0px;
+}
+.footer {
+    /* background-image: url('/img/site/footer-bg.jpg'); */
+    margin-bottom: 0px;
+    background-color: solid "#eeeeee"
+}
+.hero-head {
+    width: 100%; !important
+    margin: 0;
+}
+.company-core-values {
+    list-style-type: bullet;
+}
+.has-background-trusted-blue {
+    background-color: #264d73; !important
+    color: white;
+}
