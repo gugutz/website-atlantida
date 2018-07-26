@@ -136,12 +136,12 @@
                         <h2 class="subtitle">
                             Deixe-nos uma mensagem ou solicite um orçamento com o formulário abaixo
                         </h2>
-                        <form name="contact-form" class="contact-form" method="POST" data-netlify="true">
+                        <form name="contact-form" class="contact-form" method="POST" action="http://localhost:9000/send-mail" data-netlify="true">
 
                             <div class="field">
                                 <label class="label">Nome</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-teal" type="text" placeholder="Digite seu nome completo" value="">
+                                    <input name="name" class="input is-teal" type="text" placeholder="Digite seu nome completo" value="">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -155,7 +155,7 @@
                             <div class="field">
                                 <label class="label">Email</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-teal" type="email" placeholder="seunome@exemplo.com" value="">
+                                    <input name="mail" class="input is-teal" type="email" placeholder="seunome@exemplo.com" value="">
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
                                     </span>
@@ -170,7 +170,7 @@
                                 <label class="label">Assunto</label>
                                 <div class="control">
                                     <div class="select">
-                                        <select>
+                                        <select name='subject'>
                                             <option>Orçamento</option>
                                             <option>Dúvidas</option>
                                             <option>Reclamação</option>
@@ -182,7 +182,7 @@
                             <div class="field">
                                 <label class="label">Mensagem</label>
                                 <div class="control">
-                                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                                    <textarea name='message' class="textarea" placeholder="Textarea"></textarea>
                                 </div>
                             </div>
 
