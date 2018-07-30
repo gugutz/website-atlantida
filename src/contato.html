@@ -8,9 +8,9 @@
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            gtag("js", new Date());
 
-            gtag('config', 'UA-727116-7');
+            gtag("config", "UA-727116-7");
         </script>
 
 
@@ -20,13 +20,10 @@
 
         <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
         <!--[if IE]><link rel="shortcut icon" href="/img/site/favicon/favicon.ico"><![endif]-->
-
         <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
         <link rel="apple-touch-icon-precomposed" href="/img/site/favicon/apple-touch-icon-precomposed.png">
-
         <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
         <link rel="icon" href="/img/site/favicon/android-icon-192x192.png">
-
         <!-- www.favicon-generator.org generated code -->
         <link rel="apple-touch-icon" sizes="57x57" href="/img/site/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/img/site/favicon/apple-icon-60x60.png">
@@ -58,16 +55,18 @@
         <link rel="stylesheet" type="text/css" href="/css/main.css">
 
 
+
+
     </head>
 
-    <body class='has-background-white has-text-grey-grey'>
+    <body class="has-background-white has-text-grey-grey">
 
         <header class="hero">
             <div class="hero-head has-background-grey-lighter">
                 <div class="container">
 
                     <!-- Logo -->
-                    <a href='/'>
+                    <a href="/">
                         <img src="/img/site/logo-transparent.png" class="logo is-pulled-left" alt="Logo">
                     </a>
 
@@ -124,7 +123,7 @@
 
 
 
-        <section class='hero container'>
+        <section class="hero container">
                 <div class="hero-head container is-fluid padding-20">
                     <h1 class="title has-text-centered">Entre em contato</h1>
                 </div>
@@ -136,12 +135,15 @@
                         <h2 class="subtitle">
                             Deixe-nos uma mensagem ou solicite um orçamento com o formulário abaixo
                         </h2>
-                        <form name="contact-form" class="contact-form" method="POST" action="http://localhost:9000/send-mail" data-netlify="true">
+                        <!-- <form name="contact-form" class="contact-form" method="POST" action="/.netlify/functions/send-mail"  onsubmit="return redirect()" data-netlify="true"> -->
 
+                        <!-- <form name="contact-form" class="contact-form" method="POST" action="http://localhost:9000/send-mail"  data-netlify="true"> -->
+
+                        <form id="contact-form"  name="contact-form" class="contact-form" data-netlify="true">
                             <div class="field">
                                 <label class="label">Nome</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input name="name" class="input is-teal" type="text" placeholder="Digite seu nome completo" value="">
+                                    <input name="name" id="contact-name" class="input is-teal" type="text" placeholder="Digite seu nome completo" value="" required>
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -149,13 +151,13 @@
                                         <i class="fas fa-check"></i>
                                     </span>
                                 </div>
-                                <p class="help">Digite seu nome.</p>
+                                <p class="help">Digite seu nome</p>
                             </div>
 
                             <div class="field">
-                                <label class="label">Email</label>
+                                <label for="mail" class="label">Email</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input name="mail" class="input is-teal" type="email" placeholder="seunome@exemplo.com" value="">
+                                    <input name="mail" id="contact-mail" class="input is-teal" type="email" placeholder="seunome@exemplo.com" value="" required>
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
                                     </span>
@@ -167,10 +169,10 @@
                             </div>
 
                             <div class="field">
-                                <label class="label">Assunto</label>
+                                <label for="subject" class="label">Assunto</label>
                                 <div class="control">
                                     <div class="select">
-                                        <select name='subject'>
+                                        <select name="subject" id="contact-subject" required>
                                             <option>Orçamento</option>
                                             <option>Dúvidas</option>
                                             <option>Reclamação</option>
@@ -180,23 +182,47 @@
                             </div>
 
                             <div class="field">
-                                <label class="label">Mensagem</label>
+                                <label for="name" class="label">Mensagem</label>
                                 <div class="control">
-                                    <textarea name='message' class="textarea" placeholder="Textarea"></textarea>
+                                    S
+                                    <textarea name="message" id="contact-message" class="textarea" placeholder="Textarea" required></textarea>
                                 </div>
                             </div>
 
 
                             <div class="field is-grouped">
                                 <div class="control">
-                                    <button class="button is-link">Submit</button>
+                                    <button type="submit" class="button is-link">Enviar</button>
                                 </div>
                                 <div class="control">
-                                    <button class="button is-text">Cancel</button>
+                                    <button type="reset" class="button is-danger">Cancelar</button>
                                 </div>
                             </div>
                         </form>
                     </div>
+
+                    <!-- modal box that show when form is successfully submited -->
+                    <div class="form-success-msg">
+                        <div class="modal">
+                            <div class="modal-background"></div>
+                            <div class="modal-card">
+                                <header class="modal-card-head">
+                                    <p class="modal-card-title">Email enviado!</p>
+                                    <button class="delete" aria-label="close"></button>
+                                </header>
+                                <section class="modal-card-body">
+                                    <p>Assim que possível retornaremos uma resposta para o seu email. Agradecemos seu contato e a sua preferência.</p>
+                                </section>
+                                <footer class="modal-card-foot">
+                                    <button class="close-msg-button button is-success">Fechar esta mensagem</button>
+                                </footer>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="column is-fluid">
                         <h2 class="subtitle">
@@ -242,6 +268,8 @@
         </footer>
 
         <script src="/js/burger-toogle.js"></script>
+        <script src="/js/event-listeners.js"></script>
+        <script src="/js/handle-form-fetch.js"></script>
 
     </body>
 
