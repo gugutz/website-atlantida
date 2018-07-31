@@ -1,13 +1,9 @@
 require('dotenv').config()
 const receiver = process.env.MAIL_RECEIVER
 const chalk = require('chalk')
-const {parse} = require('querystring')
-import checkRequest from './check-request'
-import checkData from './check-data'
-import sendMail from './send-mail'
+import {checkRequest, sendMail} from './send-mail'
 
-exports.handler = async (event, context, callback) => {
-  let data
+exports.handler = async (event, context) => {
   try {
     console.log('-------------------------------------')
     console.log('begin handler function...')
@@ -16,14 +12,12 @@ exports.handler = async (event, context, callback) => {
     checkRequest(event)
 
     // create an object from the request
-    data = JSON.parse(event.body)
+    const data = JSON.parse(event.body)
 
     console.log(chalk.blue('data.name = ' + data.name))
     console.log('data.mail = ' + data.mail)
 
-    if (checkData(data)) {
-      sendMail(data)
-    }
+    sendMail(data)
 
     // responding to the request
     const statusCode = 200

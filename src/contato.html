@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
     <head>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-727116-7"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag("js", new Date());
-
-            gtag("config", "UA-727116-7");
-        </script>
-
         <meta charset="UTF-8">
         <title>Atlantida Aluminio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +40,7 @@
 
         <!-- my css configs -->
         <link rel="stylesheet" type="text/css" href="/css/main.css">
-
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     </head>
 
     <body class="has-background-white has-text-grey-grey">
@@ -118,9 +106,9 @@
         </header>
 
         <section class="hero container">
-                <div class="hero-head container is-fluid padding-20">
-                    <h1 class="title has-text-centered">Entre em contato</h1>
-                </div>
+            <div class="hero-head container is-fluid padding-20">
+                <h1 class="title has-text-centered">Entre em contato</h1>
+            </div>
             <div class="hero-body">
 
                 <div class="columns is-multiline">
@@ -130,11 +118,11 @@
                             Deixe-nos uma mensagem ou solicite um orçamento com o formulário abaixo
                         </h2>
 
-                        <form id="contact-form"  name="contact-form" class="contact-form" data-netlify="true">
+                        <form name="contact-form" class="contact-form" data-netlify="true">
                             <div class="field">
                                 <label class="label">Nome</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input name="name" id="contact-name" class="input is-teal" type="text" placeholder="Digite seu nome completo" value="" required>
+                                    <input name="name" class="contact-name input is-teal" type="text" placeholder="Digite seu nome completo" value="" required>
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -148,7 +136,7 @@
                             <div class="field">
                                 <label for="mail" class="label">Email</label>
                                 <div class="control has-icons-left has-icons-right">
-                                    <input name="mail" id="contact-mail" class="input is-teal" type="email" placeholder="seunome@exemplo.com" value="" required>
+                                    <input name="mail" class="contact-mail input is-teal" type="email" placeholder="seunome@exemplo.com" value="" required>
                                     <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
                                     </span>
@@ -163,7 +151,7 @@
                                 <label for="subject" class="label">Assunto</label>
                                 <div class="control">
                                     <div class="select">
-                                        <select name="subject" id="contact-subject" required>
+                                        <select name="subject" class="contact-subject" required>
                                             <option>Orçamento</option>
                                             <option>Dúvidas</option>
                                             <option>Reclamação</option>
@@ -176,10 +164,9 @@
                                 <label for="name" class="label">Mensagem</label>
                                 <div class="control">
                                     S
-                                    <textarea name="message" id="contact-message" class="textarea" placeholder="Textarea" required></textarea>
+                                    <textarea name="message" class="contact-message" class="textarea" placeholder="Textarea" required></textarea>
                                 </div>
                             </div>
-
 
                             <div class="field is-grouped">
                                 <div class="control">
@@ -205,7 +192,7 @@
                                     <p>Assim que possível retornaremos uma resposta para o seu email. Agradecemos seu contato e a sua preferência.</p>
                                 </section>
                                 <footer class="modal-card-foot">
-                                    <button class="close-msg-button button is-success">Fechar esta mensagem</button>
+                                    <button class="modal-toggle button button is-success">Fechar esta mensagem</button>
                                 </footer>
                             </div>
                         </div>
@@ -256,9 +243,16 @@
         </footer>
 
         <script src="/js/burger-toogle.js"></script>
-        <script src="/js/event-listeners.js"></script>
         <script src="/js/handle-form.js"></script>
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-727116-7"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "UA-727116-7");
+        </script>
     </body>
 
 

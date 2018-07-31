@@ -2,16 +2,6 @@
 <html lang="en">
     <head>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-727116-7"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-727116-7');
-        </script>
-
         <meta charset="UTF-8">
         <title>Atlantida Aluminio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,16 +36,12 @@
 
         <!-- Bulma css library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-        <!-- Font Awesome to use Bulma with Icons -->
-        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-        <!-- Bulma carousel extension -->
-        <script src="https://unpkg.com/bulma-carousel@3.0.0/dist/js/bulma-carousel.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/bulma-carousel@3.0.0/dist/css/bulma-carousel.min.css">
 
         <!-- my css configs -->
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         <link rel="stylesheet" type="text/css" href="/css/tabs.css">
-
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     </head>
 
@@ -124,31 +110,31 @@
         <section class="hero has-background-grey-light">
             <div class="tabs is-boxed is-centered main-menu" id="nav">
                 <ul>
-                    <li data-target="pane-1" id="1">
+                    <li class="js-tab-item" data-target="pane-1" id="1">
                         <a>
                             <span class="icon is-small"><i class="fa fa-image"></i></span>
                             <span>Janelas</span>
                         </a>
                     </li>
-                    <li data-target="pane-2" id="2" class="is-active">
+                    <li class="js-tab-item is-active" data-target="pane-2" id="2">
                         <a>
                             <span class="icon is-small"><i class="fab fa-empire"></i></span>
                             <span>Portas</span>
                         </a>
                     </li>
-                    <li data-target="pane-3" id="3">
+                    <li class="js-tab-item" data-target="pane-3" id="3">
                         <a>
                             <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
                             <span>Portões</span>
                         </a>
                     </li>
-                    <li data-target="pane-4" id="4">
+                    <li class="js-tab-item" data-target="pane-4" id="4">
                         <a>
                             <span class="icon is-small"><i class="fa fa-film"></i></span>
                             <span>Telhados</span>
                         </a>
                     </li>
-                    <li data-target="pane-5" id="5">
+                    <li class="js-tab-item" data-target="pane-5" id="5">
                         <a>
                             <span class="icon is-small"><i class="fa fa-film"></i></span>
                             <span>Coberturas de Policarbonato</span>
@@ -172,13 +158,13 @@
 
                 <div class="tab-pane is-active" id="pane-2">
                     <p>
-                        testes pane 2 portas
+                    testes pane 2 portas
                     </p>
                 </div>
             </div>
 
-        </div>
-    </section>
+            </div>
+        </section>
 
         <footer class="footer has-background-grey-lighter">
             <div class="container is-fluid">
@@ -191,7 +177,7 @@
                         </div>
                         <div class="is-hidden-desktop">
                             <a href="tel:+554832407844" class="button">
-                            <i class="fa fa-phone"></i>
+                                <i class="fa fa-phone"></i>
                                 <span>Ligar</span>
                             </a>
                         </div>
@@ -203,6 +189,10 @@
             </div>
         </footer>
 
+        <!-- Font Awesome to use Bulma with Icons -->
+        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+        <!-- Bulma carousel extension -->
+        <script src="https://unpkg.com/bulma-carousel@3.0.0/dist/js/bulma-carousel.min.js"></script>
         <script>
             // Attaching the Bulma carousel array
             var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
@@ -210,6 +200,15 @@
         <script src="/js/burger-toogle.js"></script>
         <script src="/js/tabs.js"></script>
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-727116-7"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-727116-7');
+        </script>
     </body>
 
 
