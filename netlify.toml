@@ -1,0 +1,9 @@
+[Settings]
+  ID = "d77b9343-7a80-4443-aa3a-1f6ea9135a2f"
+
+
+[build]
+  command = "npm build"
+  publish = "src"
+  functions = "public/lambda"
+

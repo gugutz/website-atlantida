@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
     <head>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -8,9 +7,9 @@
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            gtag("js", new Date());
+            gtag('js', new Date());
 
-            gtag("config", "UA-727116-7");
+            gtag('config', 'UA-727116-7');
         </script>
 
         <meta charset="UTF-8">
@@ -19,10 +18,13 @@
 
         <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
         <!--[if IE]><link rel="shortcut icon" href="/img/site/favicon/favicon.ico"><![endif]-->
+
         <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
         <link rel="apple-touch-icon-precomposed" href="/img/site/favicon/apple-touch-icon-precomposed.png">
+
         <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
         <link rel="icon" href="/img/site/favicon/android-icon-192x192.png">
+
         <!-- www.favicon-generator.org generated code -->
         <link rel="apple-touch-icon" sizes="57x57" href="/img/site/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/img/site/favicon/apple-icon-60x60.png">
@@ -52,24 +54,25 @@
 
         <!-- my css configs -->
         <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/css/tabs.css">
+
 
     </head>
 
-    <body class="has-background-white has-text-grey-grey">
-
+    <body>
         <header class="hero">
             <div class="hero-head has-background-grey-lighter">
-                <div class="container">
+                <div class="container is-fixed">
 
                     <!-- Logo -->
-                    <a href="/">
+                    <a href='/'>
                         <img src="/img/site/logo-transparent.png" class="logo is-pulled-left" alt="Logo">
                     </a>
 
                     <!-- Navigation Menu -->
                     <nav class="navbar">
                         <div class="navbar-brand">
-                            <div class="navbar-burger burger" data-target="navbarMenuHeroB">
+                            <div class="navbar-burger burger" data-target="navbarMenuHeroB" >
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -117,120 +120,65 @@
             </div>
         </header>
 
-        <section class="hero container">
-                <div class="hero-head container is-fluid padding-20">
-                    <h1 class="title has-text-centered">Entre em contato</h1>
+
+        <section class="hero has-background-grey-light">
+            <div class="tabs is-boxed is-centered main-menu" id="nav">
+                <ul>
+                    <li data-target="pane-1" id="1">
+                        <a>
+                            <span class="icon is-small"><i class="fa fa-image"></i></span>
+                            <span>Janelas</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-2" id="2" class="is-active">
+                        <a>
+                            <span class="icon is-small"><i class="fab fa-empire"></i></span>
+                            <span>Portas</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-3" id="3">
+                        <a>
+                            <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+                            <span>Portões</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-4" id="4">
+                        <a>
+                            <span class="icon is-small"><i class="fa fa-film"></i></span>
+                            <span>Telhados</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-5" id="5">
+                        <a>
+                            <span class="icon is-small"><i class="fa fa-film"></i></span>
+                            <span>Coberturas de Policarbonato</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane" id="pane-1" class="level">
+                    <p>Pane Janelas</p>
                 </div>
-            <div class="hero-body">
 
-                <div class="columns is-multiline">
+                <div class="tab-pane" id="pane-3">
+                    <p>pane 3 portas</p>
+                </div>
 
-                    <div class="column box">
-                        <h2 class="subtitle">
-                            Deixe-nos uma mensagem ou solicite um orçamento com o formulário abaixo
-                        </h2>
+                <div class="tab-pane" id="pane-4">
+                    <p>pane 4 telhados</p>
+                </div>
 
-                        <form id="contact-form"  name="contact-form" class="contact-form" data-netlify="true">
-                            <div class="field">
-                                <label class="label">Nome</label>
-                                <div class="control has-icons-left has-icons-right">
-                                    <input name="name" id="contact-name" class="input is-teal" type="text" placeholder="Digite seu nome completo" value="" required>
-                                    <span class="icon is-small is-left">
-                                        <i class="fas fa-user"></i>
-                                    </span>
-                                    <span class="icon is-small is-right">
-                                        <i class="fas fa-check"></i>
-                                    </span>
-                                </div>
-                                <p class="help">Digite seu nome</p>
-                            </div>
-
-                            <div class="field">
-                                <label for="mail" class="label">Email</label>
-                                <div class="control has-icons-left has-icons-right">
-                                    <input name="mail" id="contact-mail" class="input is-teal" type="email" placeholder="seunome@exemplo.com" value="" required>
-                                    <span class="icon is-small is-left">
-                                        <i class="fas fa-envelope"></i>
-                                    </span>
-                                    <span class="icon is-small is-right">
-                                        <i class="fas fa-exclamation-triangle"></i>
-                                    </span>
-                                </div>
-                                <p class="help is-info">Digite um endereço de email válido.</p>
-                            </div>
-
-                            <div class="field">
-                                <label for="subject" class="label">Assunto</label>
-                                <div class="control">
-                                    <div class="select">
-                                        <select name="subject" id="contact-subject" required>
-                                            <option>Orçamento</option>
-                                            <option>Dúvidas</option>
-                                            <option>Reclamação</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="field">
-                                <label for="name" class="label">Mensagem</label>
-                                <div class="control">
-                                    S
-                                    <textarea name="message" id="contact-message" class="textarea" placeholder="Textarea" required></textarea>
-                                </div>
-                            </div>
-
-
-                            <div class="field is-grouped">
-                                <div class="control">
-                                    <button type="submit" class="button is-link">Enviar</button>
-                                </div>
-                                <div class="control">
-                                    <button type="reset" class="button is-danger">Cancelar</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- modal box that show when form is successfully submited -->
-                    <div class="form-success-msg">
-                        <div class="modal">
-                            <div class="modal-background"></div>
-                            <div class="modal-card">
-                                <header class="modal-card-head">
-                                    <p class="modal-card-title">Email enviado!</p>
-                                    <button class="delete" aria-label="close"></button>
-                                </header>
-                                <section class="modal-card-body">
-                                    <p>Assim que possível retornaremos uma resposta para o seu email. Agradecemos seu contato e a sua preferência.</p>
-                                </section>
-                                <footer class="modal-card-foot">
-                                    <button class="close-msg-button button is-success">Fechar esta mensagem</button>
-                                </footer>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="column is-fluid">
-                        <h2 class="subtitle">
-                            Ou entre em contato através de telefone, Whatsapp ou Email
-                        </h2>
-                        <p class="is-line">Fone: (48) 3240-7844</p>
-                        <p class="is-line">Whatsapp: (48) 99105-9991</p>
-                        <p class="is-line">Email: contato@atlantidaaluminio.com.br</p>
-
-                        <hr class="content-divider">
-                        <h2 class="subtitle">
-                            Venha nos visitar!
-                        </h2>
-                        <p class="is-line">Nosso endereço no Google Maps</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.1246724632188!2d-48.64239368457511!3d-27.55864098285382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952749cd0ea2b611%3A0xa6c566f212aff0f1!2zQXRsw6JudGlkYSBBbHVtw61uaW8!5e0!3m2!1spt-BR!2sbr!4v1532398282540" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+                <div class="tab-pane is-active" id="pane-2">
+                    <p>
+                        testes pane 2 portas
+                    </p>
                 </div>
             </div>
 
-        </section>
+        </div>
+    </section>
 
         <footer class="footer has-background-grey-lighter">
             <div class="container is-fluid">
@@ -243,7 +191,7 @@
                         </div>
                         <div class="is-hidden-desktop">
                             <a href="tel:+554832407844" class="button">
-                                <i class="fa fa-phone"></i>
+                            <i class="fa fa-phone"></i>
                                 <span>Ligar</span>
                             </a>
                         </div>
@@ -255,9 +203,12 @@
             </div>
         </footer>
 
+        <script>
+            // Attaching the Bulma carousel array
+            var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
+        </script>
         <script src="/js/burger-toogle.js"></script>
-        <script src="/js/event-listeners.js"></script>
-        <script src="/js/handle-form.js"></script>
+        <script src="/js/tabs.js"></script>
 
     </body>
 
