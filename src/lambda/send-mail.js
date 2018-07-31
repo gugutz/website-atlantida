@@ -21,7 +21,11 @@ const checkRequest = request => {
   // if request is OPTIONS, return CORS headers
   if (request.httpMethod === 'OPTIONS') {
     console.log('OPTIONS preflight? Returning CORS Headers')
-    return corsHeaders
+    return {
+      statusCode,
+      corsHeaders,
+      body: JSON.stringify({status: 'no POST body sent'})
+    }
   }
 
   // if request is not POST, complain
@@ -37,11 +41,11 @@ const checkRequest = request => {
   // if there is no body in the request, something is wrong
   if (!request.body) {
     console.error('no POST body sent')
-    callback(null, {
+    return {
       statusCode,
       headers,
-      body: JSON.stringify('no body sent')
-    })
+      body: JSON.stringify({status: 'no POST body sent'})
+    }
   }
 }
 

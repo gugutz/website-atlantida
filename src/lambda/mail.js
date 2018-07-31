@@ -17,7 +17,7 @@ exports.handler = async (event, context) => {
     console.log(chalk.blue('data.name = ' + data.name))
     console.log('data.mail = ' + data.mail)
 
-    sendMail(data)
+    await sendMail(data)
 
     // responding to the request
     const statusCode = 200

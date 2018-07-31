@@ -24,18 +24,17 @@ form.addEventListener('submit', function handleForm(evt) {
   // making the fetch
   fetch(request)
     .then(response => {
-      console.log(JSON.stringify(response))
-      // passing the response down the .then/.catch pipeline
-      return response
+      if (response.ok) {
+        return response.blob()
+      } else {
+        throw new Error()
+        return
+      }
     })
     .catch(error => {
       console.error('Error fetching:', error)
       return error
     })
-    .then(response => {
-      console.log('stuff' + response)
-    })
-  // setTimeout(2, box.classList.toggle('is-active'));
 })
 
 const modalBox = document.querySelector('.modal')
