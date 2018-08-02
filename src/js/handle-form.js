@@ -3,10 +3,10 @@ form.addEventListener('submit', function handleForm(evt) {
   evt.preventDefault()
 
   const formData = {
-    name: document.querySelector('.contact-name').value,
-    mail: document.querySelector('.contact-mail').value,
-    subject: document.querySelector('.contact-subject').value,
-    message: document.querySelector('.contact-message').value
+    name: form.name.value,
+    mail: form.mail.value,
+    subject: form.subject.value,
+    message: form.message.value
   }
 
   // mounting the fetch
@@ -25,11 +25,15 @@ form.addEventListener('submit', function handleForm(evt) {
   fetch(request)
     .then(response => {
       if (response.ok) {
-        return response.blob()
+        console.log(response.json())
+        return response.json()
       } else {
         throw new Error()
         return
       }
+    })
+    .then(response => {
+      console.log(response)
     })
     .catch(error => {
       console.error('Error fetching:', error)

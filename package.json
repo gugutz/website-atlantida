@@ -22,6 +22,7 @@
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "joi": "^13.5.2",
     "netlify-lambda": "^0.4.0",
     "node-fetch": "^2.1.2",
     "webpack": "^4.6.0",
@@ -32,7 +33,7 @@
     "@sendgrid/mail": "^6.3.1",
     "normalize.css": "^8.0.0"
   },
- "prettier": {
+  "prettier": {
     "singleQuote": true,
     "semi": false,
     "bracketSpacing": false,
